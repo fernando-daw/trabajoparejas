@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form style="border: 1px solid black" action="">
+
+        <fieldset>
+            <legend>Your Details</legend>
+            <ul>
+                1.Name:
+                <input type="text" name="nombre" id="nombre" placeholder="First and last name">
+                <br>
+                <label>
+                    2.Email:
+                    <input type="text" name="email" id="email" placeholder="example@domain.com">
+                </label>
+                <br>
+                <label>
+                    3.Phone:
+                    <input type="phone number" name="phone number" id="phone number" placeholder="Eg. +447500000000"
+                        required>
+                    <!--"required" No deja enviar porque-no se han completado los campos-->
+                </label>
+        </fieldset>
+        <fieldset>
+            <legend>Delivery Address</legend>
+            <label>
+                Address:
+                <textarea name="comentario" id="comentario" cols="20" rows="5"></textarea>
+            </label>
+            <br>
+            <label>
+                Post Code:
+                <input type="phone number" name="phone number" id="phone number" required>
+                <!--"required" No deja enviar porque-no se han completado los campos-->
+            </label>
+            <br>
+            <label>
+                Country:
+                <input type="phone number" name="phone number" id="phone number" required>
+                <!--"required" No deja enviar porque-no se han completado los campos-->
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Card Details</legend>
+            <label for="">
+                <fieldset>
+                    <legend>Card type</legend>
+                    <li><input type="radio" name="edad" value=""> VISA</li>
+                    <li><input type="radio" name="edad" value=""> AmEX</li>
+                    <li><input type="radio" name="edad" value=""> Mastercard</li>
+                </fieldset>
+                2.Card Number:
+                <input type="number" name="nota" id="nota" step="5" min="0" max="100">
+                <br>
+                3.Security Code:
+                <input type="number" name="nota" id="nota" step="5" min="0" max="100">
+                <br>
+                4.Name on Card:
+                <input type="text" name="nombre" id="nombre" placeholder="Exact">
+            </label>
+        </fieldset>
+        <br>
+<fieldset>        <input type="submit" value="Buy It">     
+</fieldset>
+    </form>
+
+</body>
+
+</html>
